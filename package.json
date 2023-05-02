@@ -1,0 +1,20 @@
+{
+  "name": "yinlong-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "keystone dev",
+    "generate": "keystone prisma migrate dev",
+    "postinstall": "keystone postinstall",
+    "build": "keystone build",
+    "deploy": "keystone build && keystone prisma migrate deploy",
+    "start": "keystone start"
+  },
+  "dependencies": {
+    "@keystone-6/auth": "^7.0.0",
+    "@keystone-6/core": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.0.4"
+  }
+}
